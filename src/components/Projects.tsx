@@ -1,0 +1,244 @@
+"use client";
+
+import { ArrowUpRight, Github, ExternalLink } from "lucide-react";
+import Image from "next/image";
+
+const Projects = () => {
+  const projects = [
+    {
+      title: "E-Commerce Platform",
+      description:
+        "A full-featured e-commerce application with user authentication, product management, and secure payment processing. Built with modern React patterns and optimized for performance.",
+      tech: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe API"],
+      github: "https://github.com/ahmed/ecommerce-platform",
+      demo: "https://ecommerce-demo.vercel.app",
+      year: "2024",
+      image: "/projects/ecommerce-platform.jpg",
+      featured: true,
+    },
+    {
+      title: "Task Management App",
+      description:
+        "Collaborative task management with real-time updates, drag-and-drop functionality, and team collaboration features. Includes advanced filtering and project organization.",
+      tech: ["React", "Node.js", "Socket.io", "MongoDB"],
+      github: "https://github.com/ahmed/task-manager",
+      demo: "https://task-manager-demo.vercel.app",
+      year: "2024",
+      image: "/projects/task-manager.jpg",
+      featured: true,
+    },
+    {
+      title: "Testing Automation Suite",
+      description:
+        "Comprehensive testing framework with automated test cases and detailed reporting for web applications. Developed during DEPI training with industry best practices.",
+      tech: ["Selenium", "Java", "TestNG", "Maven"],
+      github: "https://github.com/ahmed/testing-suite",
+      demo: null,
+      year: "2024",
+      image: "/projects/testing-suite.jpg",
+      featured: false,
+    },
+    {
+      title: "Weather Dashboard",
+      description:
+        "Responsive weather application with current conditions, forecasts, and beautiful data visualizations. Features location-based services and interactive charts.",
+      tech: ["React", "Chart.js", "OpenWeather API", "CSS3"],
+      github: "https://github.com/ahmed/weather-dashboard",
+      demo: "https://weather-dashboard-demo.vercel.app",
+      year: "2024",
+      image: "/projects/weather-dashboard.jpg",
+      featured: false,
+    },
+    {
+      title: "Unity 2D Platformer",
+      description:
+        "A 2D platformer game featuring custom physics, level design, and character animations. Showcases game development skills and C# programming proficiency.",
+      tech: ["Unity", "C#", "Game Design", "2D Graphics"],
+      github: "https://github.com/ahmed/unity-platformer",
+      demo: null,
+      year: "2024",
+      image: "/projects/unity-platformer.jpg",
+      featured: false,
+    },
+  ];
+
+  const ProjectCard = ({
+    project,
+    index,
+  }: {
+    project: (typeof projects)[0];
+    index: number;
+  }) => (
+    <div className={`group ${project.featured ? "lg:col-span-2" : ""}`}>
+      {/* Project Image */}
+      <div
+        className={`relative overflow-hidden bg-gray-100 mb-6 ${
+          project.featured ? "aspect-[16/10]" : "aspect-[4/3]"
+        }`}
+      >
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+          {/* Placeholder for actual image */}
+          <div className="text-center text-gray-500">
+            <div className="text-4xl mb-2">📸</div>
+            <p className="text-sm font-medium">Project Screenshot</p>
+            <p className="text-xs mt-1">Replace with actual image</p>
+          </div>
+        </div>
+
+        {/* Uncomment when you have actual images */}
+        {/* <Image
+          src={project.image}
+          alt={`${project.title} screenshot`}
+          fill
+          className="object-cover transition-transform duration-500 group-hover:scale-105"
+          sizes={project.featured ? "(max-width: 768px) 100vw, 66vw" : "(max-width: 768px) 100vw, 33vw"}
+        /> */}
+
+        {/* Overlay on hover */}
+        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
+      </div>
+
+      {/* Project Content */}
+      <div className="space-y-4">
+        {/* Project header */}
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+          <h3 className="text-xl md:text-2xl font-light text-black tracking-tight">
+            {project.title}
+          </h3>
+          <span className="text-sm text-gray-500 mt-1 sm:mt-0">
+            {project.year}
+          </span>
+        </div>
+
+        {/* Project description */}
+        <p className="text-gray-600 leading-relaxed font-light">
+          {project.description}
+        </p>
+
+        {/* Tech stack */}
+        <div className="flex flex-wrap gap-2">
+          {project.tech.map((tech) => (
+            <span
+              key={tech}
+              className="text-xs text-gray-500 bg-gray-50 px-3 py-1 rounded-full font-medium"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
+
+        {/* Project links */}
+        <div className="flex items-center gap-6 pt-2">
+          <a
+            href={project.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group/link inline-flex items-center gap-2 text-black hover:text-gray-600 transition-colors duration-300"
+          >
+            <Github size={16} />
+            <span className="text-sm font-medium">Code</span>
+          </a>
+          {project.demo && (
+            <a
+              href={project.demo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group/link inline-flex items-center gap-2 text-black hover:text-gray-600 transition-colors duration-300"
+            >
+              <ExternalLink size={16} />
+              <span className="text-sm font-medium">Live Demo</span>
+              <ArrowUpRight
+                size={16}
+                className="group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform duration-300"
+              />
+            </a>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+
+  return (
+    <section id="work" className="py-32 bg-white">
+      <div className="max-w-6xl mx-auto px-6 lg:px-8">
+        {/* Section Header */}
+        <div className="mb-20">
+          <h2 className="text-3xl md:text-4xl font-light text-black tracking-tight mb-4">
+            Selected Work
+          </h2>
+          <p className="text-lg text-gray-600 font-light max-w-2xl">
+            A collection of projects showcasing my development journey from web
+            applications to testing frameworks and game development.
+          </p>
+        </div>
+
+        {/* Featured Projects Grid */}
+        <div className="mb-20">
+          <h3 className="text-sm font-medium text-black tracking-wide uppercase mb-8">
+            Featured Projects
+          </h3>
+          <div className="grid lg:grid-cols-2 gap-16">
+            {projects
+              .filter((p) => p.featured)
+              .map((project, index) => (
+                <ProjectCard
+                  key={project.title}
+                  project={project}
+                  index={index}
+                />
+              ))}
+          </div>
+        </div>
+
+        {/* Other Projects */}
+        <div className="border-t border-gray-200 pt-20">
+          <h3 className="text-sm font-medium text-black tracking-wide uppercase mb-8">
+            Other Projects
+          </h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+            {projects
+              .filter((p) => !p.featured)
+              .map((project, index) => (
+                <ProjectCard
+                  key={project.title}
+                  project={project}
+                  index={index}
+                />
+              ))}
+          </div>
+        </div>
+
+        {/* View More Section */}
+        <div className="mt-20 pt-12 border-t border-gray-200 text-center">
+          <div className="max-w-2xl mx-auto mb-8">
+            <h3 className="text-xl font-light text-black mb-4">
+              Explore More Work
+            </h3>
+            <p className="text-gray-600 font-light">
+              These projects represent my core competencies, but I&apos;m
+              constantly experimenting with new technologies and building
+              smaller projects to expand my skills.
+            </p>
+          </div>
+
+          <a
+            href="https://github.com/ahmed"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center gap-2 text-black hover:text-gray-600 transition-colors duration-300"
+          >
+            <span className="text-sm font-medium tracking-wide uppercase">
+              View All Projects
+            </span>
+            <ArrowUpRight
+              size={16}
+              className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Projects;
