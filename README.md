@@ -151,8 +151,8 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 📞 Contact
 
 - **Email**: ahmedhegazysad@egmail.com
-- **LinkedIn**: [[linkedin.com/in/ahmed](https://linkedin.com/in/ahmed)](https://www.linkedin.com/in/ahmed-hegazy567/)
-- **GitHub**: [[github.com/ahmed](https://github.com/ahmed)](https://github.com/xlargetomato)
+- **LinkedIn**: https://www.linkedin.com/in/ahmed-hegazy567
+- **GitHub**: https://github.com/xlargetomato
 
 ---
 
