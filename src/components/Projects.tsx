@@ -6,14 +6,14 @@ import Image from "next/image";
 const Projects = () => {
   const projects = [
     {
-      title: "Course Management",
+      title: "Course Management System",
       description:
         "A web-based system designed to help students manage courses and quizzes in an organized way. The platform includes a login page for specific students who can create and manage courses, as well as add and organize quiz questions. \n This was my first real project, and while the code was not perfect, I was proud to create something functional that solved a real problem for students. It also gave me valuable experience in teamwork, frontend development, and integrating with backend systems.",
       tech: ["HTML", "CSS", "JavaScript","jQuery", "PHP", "MySQL"],
       github: "https://github.com/xlargetomato/Course-Management-System",
       demo: "https://uni-website.unaux.com/",
       year: "2023",
-      image: "/image.png",
+      image: "/image1.png",
       featured: false,
     },
     {
@@ -28,14 +28,14 @@ const Projects = () => {
       featured: true,
     },
     {
-      title: "Testing Automation Suite",
+      title: "Gym Management Desktop App",
       description:
-        "Comprehensive testing framework with automated test cases and detailed reporting for web applications. Developed during DEPI training with industry best practices.",
-      tech: ["Selenium", "Java", "TestNG", "Maven"],
-      github: "https://github.com/ahmed/testing-suite",
+        "A desktop application built for a local gym to manage users, subscriptions, attendance, and membership details.",
+      tech: ["HTML", "CSS", "JavaScript", "Electron", "JSON (for lightweight local storage)"],
+      github: "https://github.com/xlargetomato/Shawky-Gym",
       demo: null,
-      year: "2024",
-      image: "/projects/testing-suite.jpg",
+      year: "2025",
+      image: "/image2.png",
       featured: false,
     },
     {
@@ -94,7 +94,7 @@ const Projects = () => {
       <div className="space-y-4">
         {/* Project header */}
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
-          <h3 className="text-xl md:text-2xl font-light text-black tracking-tight">
+          <h3 className="text-lg md:text-xl font-light text-black tracking-tight">
             {project.title}
           </h3>
           <span className="text-sm text-gray-500 mt-1 sm:mt-0">
