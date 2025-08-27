@@ -150,9 +150,9 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 📞 Contact
 
-- **Email**: ahmed@example.com
-- **LinkedIn**: [linkedin.com/in/ahmed](https://linkedin.com/in/ahmed)
-- **GitHub**: [github.com/ahmed](https://github.com/ahmed)
+- **Email**: ahmedhegazysad@egmail.com
+- **LinkedIn**: [[linkedin.com/in/ahmed](https://linkedin.com/in/ahmed)](https://www.linkedin.com/in/ahmed-hegazy567/)
+- **GitHub**: [[github.com/ahmed](https://github.com/ahmed)](https://github.com/xlargetomato)
 
 ---
 
