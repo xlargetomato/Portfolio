@@ -49,7 +49,7 @@ const Contact = () => {
                   className="group inline-flex items-center gap-2 text-black hover:text-gray-600 transition-colors duration-300"
                 >
                   <Mail size={16} className="flex-shrink-0" />
-                  <span className="font-medium">ahmed@example.com</span>
+                  <span className="font-medium">ahmedhegazysad@gmail.com</span>
                   <ArrowUpRight
                     size={16}
                     className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300"
@@ -58,7 +58,7 @@ const Contact = () => {
 
                 <div className="flex items-center gap-6">
                   <a
-                    href="https://linkedin.com/in/ahmed"
+                    href="https://www.linkedin.com/in/ahmed-hegazy567/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group inline-flex items-center gap-2 text-black hover:text-gray-600 transition-colors duration-300"
@@ -72,7 +72,7 @@ const Contact = () => {
                   </a>
 
                   <a
-                    href="https://github.com/ahmed"
+                    href="https://github.com/xlargetomato"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group inline-flex items-center gap-2 text-black hover:text-gray-600 transition-colors duration-300"

@@ -23,14 +23,14 @@ const Footer = () => {
           <div className="flex flex-col md:items-end gap-4">
             <div className="flex items-center gap-6">
               <a
-                href="mailto:ahmed@example.com"
+                href="mailto:ahmedhegazysad@gmail.com"
                 className="inline-flex items-center gap-2 text-sm text-gray-600 hover:text-black transition-colors duration-300 font-medium"
               >
                 <Mail size={14} />
                 <span>Email</span>
               </a>
               <a
-                href="https://linkedin.com/in/ahmed"
+                href="https://www.linkedin.com/in/ahmed-hegazy567/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-sm text-gray-600 hover:text-black transition-colors duration-300 font-medium"
@@ -39,7 +39,7 @@ const Footer = () => {
                 <span>LinkedIn</span>
               </a>
               <a
-                href="https://github.com/ahmed"
+                href="https://github.com/xlargetomato"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-sm text-gray-600 hover:text-black transition-colors duration-300 font-medium"

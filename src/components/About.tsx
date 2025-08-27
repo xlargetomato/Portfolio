@@ -3,17 +3,31 @@
 const About = () => {
   const timeline = [
     {
-      year: "2024",
+      year: "2025",
       title: "DEPI Software Testing Program",
       description:
         "QA methodologies, test automation, and quality assurance best practices.",
       current: true,
     },
     {
+      year: "2025",
+      title: "Full-Stack Development",
+      description:
+        "Next.js (Full-Stack with API Routes)",
+      current: true,
+    },
+    {
       year: "2024",
       title: "Full-Stack Development",
       description:
-        "React, Next.js, TypeScript, and backend development with Java.",
+        "React, Next.js and TypeScript",
+      current: false,
+    },
+    {
+      year: "2024",
+      title: "Game Development using Unity",
+      description:
+        "Unity, C#, Blender, and game development.",
       current: false,
     },
     {

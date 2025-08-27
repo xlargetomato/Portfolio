@@ -6,14 +6,14 @@ import Image from "next/image";
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "Course Management System",
       description:
-        "A full-featured e-commerce application with user authentication, product management, and secure payment processing. Built with modern React patterns and optimized for performance.",
-      tech: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe API"],
-      github: "https://github.com/ahmed/ecommerce-platform",
-      demo: "https://ecommerce-demo.vercel.app",
-      year: "2024",
-      image: "/projects/ecommerce-platform.jpg",
+        "A web-based system designed to help students manage courses and quizzes in an organized way. The platform includes a login page for specific students who can create and manage courses, as well as add and organize quiz questions. \n This was my first real project, and while the code was not perfect, I was proud to create something functional that solved a real problem for students. It also gave me valuable experience in teamwork, frontend development, and integrating with backend systems.",
+      tech: ["HTML", "CSS", "JavaScript","jQuery", "PHP", "MySQL"],
+      github: "https://github.com/xlargetomato/Course-Management-System",
+      demo: "https://uni-website.unaux.com/",
+      year: "2023",
+      image: "/my-portfolio/public/screencapture-uni-website-unaux-2025-08-27-23_54_06.png",
       featured: true,
     },
     {
@@ -76,23 +76,15 @@ const Projects = () => {
           project.featured ? "aspect-[16/10]" : "aspect-[4/3]"
         }`}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
-          {/* Placeholder for actual image */}
-          <div className="text-center text-gray-500">
-            <div className="text-4xl mb-2">📸</div>
-            <p className="text-sm font-medium">Project Screenshot</p>
-            <p className="text-xs mt-1">Replace with actual image</p>
-          </div>
-        </div>
 
         {/* Uncomment when you have actual images */}
-        {/* <Image
+        <Image
           src={project.image}
           alt={`${project.title} screenshot`}
           fill
           className="object-cover transition-transform duration-500 group-hover:scale-105"
           sizes={project.featured ? "(max-width: 768px) 100vw, 66vw" : "(max-width: 768px) 100vw, 33vw"}
-        /> */}
+        />
 
         {/* Overlay on hover */}
         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
@@ -222,7 +214,7 @@ const Projects = () => {
           </div>
 
           <a
-            href="https://github.com/ahmed"
+            href="https://github.com/xlargetomato"
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-2 text-black hover:text-gray-600 transition-colors duration-300"
