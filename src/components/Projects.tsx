@@ -6,15 +6,15 @@ import Image from "next/image";
 const Projects = () => {
   const projects = [
     {
-      title: "Course Management System",
+      title: "Course Management",
       description:
         "A web-based system designed to help students manage courses and quizzes in an organized way. The platform includes a login page for specific students who can create and manage courses, as well as add and organize quiz questions. \n This was my first real project, and while the code was not perfect, I was proud to create something functional that solved a real problem for students. It also gave me valuable experience in teamwork, frontend development, and integrating with backend systems.",
       tech: ["HTML", "CSS", "JavaScript","jQuery", "PHP", "MySQL"],
       github: "https://github.com/xlargetomato/Course-Management-System",
       demo: "https://uni-website.unaux.com/",
       year: "2023",
-      image: "/my-portfolio/public/screencapture-uni-website-unaux-2025-08-27-23_54_06.png",
-      featured: true,
+      image: "/image.png",
+      featured: false,
     },
     {
       title: "Task Management App",
@@ -58,7 +58,7 @@ const Projects = () => {
       demo: null,
       year: "2024",
       image: "/projects/unity-platformer.jpg",
-      featured: false,
+      featured: true,
     },
   ];
 
@@ -71,18 +71,18 @@ const Projects = () => {
   }) => (
     <div className={`group ${project.featured ? "lg:col-span-2" : ""}`}>
       {/* Project Image */}
-      <div
-        className={`relative overflow-hidden bg-gray-100 mb-6 ${
-          project.featured ? "aspect-[16/10]" : "aspect-[4/3]"
-        }`}
-      >
+             <div
+         className={`relative overflow-hidden bg-gray-100 mb-6 ${
+           project.featured ? "aspect-[16/9]" : "aspect-[16/9]"
+         }`}
+       >
 
         {/* Uncomment when you have actual images */}
         <Image
           src={project.image}
           alt={`${project.title} screenshot`}
           fill
-          className="object-cover transition-transform duration-500 group-hover:scale-105"
+          className="object-fill transition-transform duration-500 group-hover:scale-105"
           sizes={project.featured ? "(max-width: 768px) 100vw, 66vw" : "(max-width: 768px) 100vw, 33vw"}
         />
 
