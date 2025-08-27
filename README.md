@@ -144,10 +144,6 @@ The built application can be deployed to any static hosting service:
 
 Feel free to fork this project and customize it for your own portfolio. If you find any bugs or have suggestions for improvements, please open an issue or submit a pull request.
 
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
 ## 📞 Contact
 
 - **Email**: ahmedhegazysad@egmail.com
