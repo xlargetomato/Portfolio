@@ -13,7 +13,7 @@ const Projects = () => {
       github: "https://github.com/xlargetomato/Course-Management-System",
       demo: "https://uni-website.unaux.com/",
       year: "2023",
-      image: "/image1.png",
+      image: "/projects/image1.png",
       featured: false,
     },
     {
@@ -35,7 +35,7 @@ const Projects = () => {
       github: "https://github.com/xlargetomato/Shawky-Gym",
       demo: null,
       year: "2025",
-      image: "/image2.png",
+      image: "/projects/image2.png",
       featured: false,
     },
     {
