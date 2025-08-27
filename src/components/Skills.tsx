@@ -49,7 +49,7 @@ const Skills = () => {
     ],
   };
 
-  const SkillCard = ({ skill }: { skill: { name: string; icon: any } }) => {
+  const SkillCard = ({ skill }: { skill: { name: string; icon: React.ElementType } }) => {
     const IconComponent = skill.icon;
 
     return (

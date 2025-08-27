@@ -40,9 +40,9 @@ const About = () => {
             {/* Introduction */}
             <div className="space-y-6">
               <p className="text-lg md:text-xl text-gray-800 leading-relaxed font-light">
-                I'm a passionate developer with a strong foundation in modern
+                I&apos;m a passionate developer with a strong foundation in modern
                 web technologies and a growing expertise in software testing. My
-                journey began with front-end development, and I've since
+                journey began with front-end development, and I&apos;ve since
                 expanded into full-stack development while pursuing formal
                 training in QA methodologies.
               </p>
