@@ -10,13 +10,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Ahmed — Junior Developer & Software Tester",
+  title: "Ahmed — Software Developer",
   description:
-    "Passionate junior developer and software tester specializing in React, Next.js, and QA methodologies. Currently expanding skills in Java, Unity C#, and test automation through DEPI training.",
+    "Passionate software developer specializing in React, Next.js, and QA methodologies. Currently expanding skills in Java, Unity C#, and test automation through DEPI training.",
   keywords: [
     "Ahmed",
-    "Junior Developer",
-    "Software Tester",
+    "Software Developer",
     "React",
     "Next.js",
     "TypeScript",
@@ -48,16 +47,16 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://ahmed-portfolio.vercel.app",
-    title: "Ahmed - Junior Developer & Software Tester",
+    title: "Ahmed - Software Developer",
     description:
-      "Passionate junior developer and software tester specializing in React, Next.js, and QA methodologies.",
+      "Passionate software developer specializing in React, Next.js, and QA methodologies.",
     siteName: "Ahmed Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ahmed - Junior Developer & Software Tester",
+    title: "Ahmed - Software Developer",
     description:
-      "Passionate junior developer and software tester specializing in React, Next.js, and QA methodologies.",
+      "Passionate software developer specializing in React, Next.js, and QA methodologies.",
   },
 };
 

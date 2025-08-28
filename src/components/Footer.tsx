@@ -15,7 +15,7 @@ const Footer = () => {
               Ahmed
             </div>
             <p className="text-sm text-gray-600 font-light">
-              Junior Developer & Software Tester
+              Software Developer
             </p>
           </div>
 

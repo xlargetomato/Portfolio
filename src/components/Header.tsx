@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Link, Menu, X } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,6 +10,7 @@ const Header = () => {
     { name: "About", href: "#about" },
     { name: "Skills", href: "#skills" },
     { name: "Work", href: "#work" },
+    { name: "Explore", href: "/explore" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -18,12 +19,12 @@ const Header = () => {
       <nav className="max-w-5xl mx-auto px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <a
-            href="#home"
+          <Link
+            href="/"
             className="text-lg font-medium text-black tracking-tight"
           >
             Ahmed
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-12">

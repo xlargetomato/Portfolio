@@ -45,6 +45,19 @@ const Hero = () => {
               </a>
 
               <a
+                href="/explore"
+                className="group inline-flex items-center gap-2 text-black hover:text-gray-600 transition-colors duration-300"
+              >
+                <span className="text-sm font-medium tracking-wide uppercase">
+                  Explore Projects
+                </span>
+                <ArrowUpRight
+                  size={16}
+                  className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300"
+                />
+              </a>
+
+              <a
                 href="#contact"
                 className="group inline-flex items-center gap-2 text-black hover:text-gray-600 transition-colors duration-300"
               >
@@ -78,7 +91,7 @@ const Hero = () => {
                 {/* Uncomment when you have actual photo */}
                 {/* <Image
                   src="/profile/ahmed-profile.jpg"
-                  alt="Ahmed - Junior Developer & Software Tester"
+                  alt="Ahmed - Software Developer"
                   fill
                   className="object-cover rounded-2xl"
                   sizes="(max-width: 768px) 320px, 320px"
