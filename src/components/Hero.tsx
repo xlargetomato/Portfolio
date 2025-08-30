@@ -15,8 +15,7 @@ const Hero = () => {
           <div className="lg:col-span-8">
             {/* Main heading */}
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-light text-black leading-[0.9] tracking-tight mb-8">
-              Junior Developer &<br />
-              Software Tester
+              Software Developer
             </h1>
 
             {/* Subtitle */}
@@ -111,3 +110,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
