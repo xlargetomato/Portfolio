@@ -66,50 +66,23 @@ export const projects: Project[] = [
     featured: true,
   },
   // Additional placeholder projects to make explore page richer
-  {
-    title: "E-commerce Platform",
-    description: "Full-stack e-commerce store with cart, checkout, and admin dashboard.",
-    tech: ["Next.js", "TypeScript", "Stripe", "PostgreSQL", "Prisma"],
-    github: null,
-    demo: null,
-    year: "2024",
-    image: "/projects/ecommerce-platform.jpg",
-    featured: false,
-  },
-  {
-    title: "Automated Testing Suite",
-    description: "Comprehensive E2E and unit testing setup for CI with detailed reporting.",
-    tech: ["Playwright", "Jest", "Testing Library", "GitHub Actions"],
-    github: null,
-    demo: null,
-    year: "2025",
-    image: "/projects/testing-suite.jpg",
-    featured: false,
-  },
-  {
-    title: "Weather Dashboard Classic",
-    description: "Vanilla JS weather app focusing on accessibility and performance.",
-    tech: ["HTML", "CSS", "JavaScript", "OpenWeather API"],
-    github: null,
-    demo: null,
-    year: "2023",
-    image: "/projects/weather-dashboard.jpg",
-    featured: false,
-  },
-  {
-    title: "Task Manager Lite",
-    description: "Lightweight tasks app with local storage and PWA support.",
-    tech: ["React", "Vite", "PWA"],
-    github: null,
-    demo: null,
-    year: "2024",
-    image: "/projects/task-manager.jpg",
-    featured: false,
-  },
+{
+  title: "File Organizer",
+  description: "Windows desktop application that organizes files intelligently by type, date, or size. Includes a safe preview system, undo functionality, and modern UI with progress tracking. Built with AI-assisted design (Claude Sonnet 4) for UI/UX.",
+  tech: ["C#", ".NET Framework", "WinForms", "Visual Studio"],
+  github: "https://github.com/xlargetomato/File-Organizer",
+  demo: null,
+  year: "2025",
+  image: "/projects/file-organizer.png",
+  featured: false,
+},
+
+
 ];
 
 export const allTechnologies = Array.from(
   new Set(projects.flatMap((p) => p.tech))
 ).sort();
+
 
 
