@@ -43,17 +43,16 @@ export const projects: Project[] = [
     image: "/projects/image2.png",
     featured: false,
   },
-  {
-    title: "Weather Dashboard",
-    description:
-      "Responsive weather application with current conditions, forecasts, and beautiful data visualizations. Features location-based services and interactive charts.",
-    tech: ["React", "Chart.js", "OpenWeather API", "CSS3"],
-    github: "https://github.com/ahmed/weather-dashboard",
-    demo: "https://weather-dashboard-demo.vercel.app",
-    year: "2024",
-    image: "/projects/image2.png",
-    featured: false,
-  },
+{
+  title: "File Organizer",
+  description: "Windows desktop application that organizes files intelligently by type, date, or size. Includes a safe preview system, undo functionality, and modern UI with progress tracking. Built with AI-assisted design (Claude Sonnet 4) for UI/UX.",
+  tech: ["C#", ".NET Framework", "WinForms", "Visual Studio"],
+  github: "https://github.com/xlargetomato/File-Organizer",
+  demo: null,
+  year: "2025",
+  image: "/projects/file-organizer.png",
+  featured: false,
+},
   {
     title: "Unity 2D Platformer",
     description:
@@ -66,23 +65,25 @@ export const projects: Project[] = [
     featured: true,
   },
   // Additional placeholder projects to make explore page richer
-{
-  title: "File Organizer",
-  description: "Windows desktop application that organizes files intelligently by type, date, or size. Includes a safe preview system, undo functionality, and modern UI with progress tracking. Built with AI-assisted design (Claude Sonnet 4) for UI/UX.",
-  tech: ["C#", ".NET Framework", "WinForms", "Visual Studio"],
-  github: "https://github.com/xlargetomato/File-Organizer",
-  demo: null,
-  year: "2025",
-  image: "/projects/file-organizer.png",
-  featured: false,
-},
 
+  {
+    title: "Unity 2D Platformer",
+    description:
+      "A 2D platformer game featuring custom physics, level design, and character animations. Showcases game development skills and C# programming proficiency.",
+    tech: ["Unity", "C#", "Game Design", "2D Graphics"],
+    github: "https://github.com/ahmed/unity-platformer",
+    demo: null,
+    year: "2024",
+    image: "/projects/image1.png",
+    featured: true,
+  },
 
 ];
 
 export const allTechnologies = Array.from(
   new Set(projects.flatMap((p) => p.tech))
 ).sort();
+
 
 
 
