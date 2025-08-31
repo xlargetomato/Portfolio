@@ -79,7 +79,7 @@ const Hero = () => {
 
                 {/* Uncomment when you have actual photo */}
                 <Image
-                  src="/profile/ahmed-profile.png"
+                  src="/ahmed-profile.png"
                   alt="Ahmed - Software Developer"
                   fill
                   className="object-cover rounded-2xl"
@@ -100,5 +100,6 @@ const Hero = () => {
 };
 
 export default Hero;
+
 
 
