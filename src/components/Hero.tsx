@@ -44,11 +44,13 @@ const Hero = () => {
               </a>
 
               <a
-                href="/explore"
+                href="/cv.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group inline-flex items-center gap-2 text-black hover:text-gray-600 transition-colors duration-300"
               >
                 <span className="text-sm font-medium tracking-wide uppercase">
-                  Explore Projects
+                  Download CV
                 </span>
                 <ArrowUpRight
                   size={16}

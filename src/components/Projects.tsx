@@ -100,16 +100,27 @@ const Projects = () => {
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         {/* Section Header */}
         <div className="mb-20">
-          <h2 className="text-3xl md:text-4xl font-light text-black tracking-tight mb-4">
-            Selected Work
-          </h2>
-          <p className="text-lg text-gray-600 font-light max-w-2xl">
-            A collection of projects showcasing my development journey from web
-            applications to testing frameworks and game development.
-          </p>
-          <div className="mt-4">
-            <a href="/explore" className="text-sm text-gray-600 hover:text-black">
-              Explore all projects →
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-light text-black tracking-tight mb-4">
+                Selected Work
+              </h2>
+              <p className="text-lg text-gray-600 font-light max-w-2xl">
+                A collection of projects showcasing my development journey from web
+                applications to testing frameworks and game development.
+              </p>
+            </div>
+            <a
+              href="/explore"
+              className="group inline-flex items-center gap-2 text-black hover:text-gray-600 transition-colors duration-300 bg-gray-50 hover:bg-gray-100 px-6 py-3 rounded-lg border border-gray-200"
+            >
+              <span className="text-sm font-medium tracking-wide uppercase">
+                Explore All Projects
+              </span>
+              <ArrowUpRight
+                size={16}
+                className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300"
+              />
             </a>
           </div>
         </div>
@@ -165,7 +176,7 @@ const Projects = () => {
 
           <a
             href="/explore"
-            className="group inline-flex items-center gap-2 text-black hover:text-gray-600 transition-colors duration-300"
+            className="group inline-flex items-center gap-2 text-black hover:text-gray-600 transition-colors duration-300 bg-black hover:bg-gray-800 text-white px-8 py-4 rounded-lg"
           >
             <span className="text-sm font-medium tracking-wide uppercase">
               View All Projects
