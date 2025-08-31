@@ -71,28 +71,27 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right column - Profile Photo */}
-          <div className="lg:col-span-4 order-first lg:order-last">
-            <div className="relative">
-              {/* Photo container */}
-              <div className="relative w-80 h-80 mx-auto lg:ml-auto lg:mr-0">
+{/* Right column - Profile Photo */}
+<div className="lg:col-span-4 order-last lg:order-last">
+  <div className="relative">
+    {/* Photo container */}
+    <div className="relative w-80 h-80 mx-auto lg:ml-auto lg:mr-0">
+      <Image
+        src="/profile/profile.png"
+        alt="Ahmed - Software Developer"
+        fill
+        className="object-cover rounded-2xl"
+        sizes="(max-width: 768px) 320px, 320px"
+        priority
+      />
+    </div>
 
-                {/* Uncomment when you have actual photo */}
-                <Image
-                  src="/ahmed-profile.png"
-                  alt="Ahmed - Software Developer"
-                  fill
-                  className="object-cover rounded-2xl"
-                  sizes="(max-width: 768px) 320px, 320px"
-                  priority
-                />
-              </div>
+    {/* Decorative elements */}
+    <div className="absolute -top-4 -right-4 w-24 h-24 bg-blue-50 rounded-full -z-10"></div>
+    <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gray-50 rounded-full -z-10"></div>
+  </div>
+</div>
 
-              {/* Decorative elements */}
-              <div className="absolute -top-4 -right-4 w-24 h-24 bg-blue-50 rounded-full -z-10"></div>
-              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gray-50 rounded-full -z-10"></div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -100,6 +99,7 @@ const Hero = () => {
 };
 
 export default Hero;
+
 
 
 
