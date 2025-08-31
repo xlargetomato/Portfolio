@@ -76,26 +76,16 @@ const Hero = () => {
             <div className="relative">
               {/* Photo container */}
               <div className="relative w-80 h-80 mx-auto lg:ml-auto lg:mr-0">
-                {/* Placeholder for actual photo */}
-                <div className="w-full h-full rounded-2xl bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center border border-gray-200">
-                  <div className="text-center text-gray-500">
-                    <div className="text-6xl mb-4">👤</div>
-                    <p className="text-sm font-medium">Professional Photo</p>
-                    <p className="text-xs mt-1 text-gray-400">
-                      Replace with your image
-                    </p>
-                  </div>
-                </div>
 
                 {/* Uncomment when you have actual photo */}
-                {/* <Image
-                  src="/profile/ahmed-profile.jpg"
+                <Image
+                  src="/profile/ahmed-profile.png"
                   alt="Ahmed - Software Developer"
                   fill
                   className="object-cover rounded-2xl"
                   sizes="(max-width: 768px) 320px, 320px"
                   priority
-                /> */}
+                />
               </div>
 
               {/* Decorative elements */}
@@ -110,4 +100,5 @@ const Hero = () => {
 };
 
 export default Hero;
+
 
