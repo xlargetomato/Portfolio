@@ -1,7 +1,7 @@
 # Personal Portfolio  
 
 This is my personal developer portfolio built with **Next.js** and **Tailwind CSS**.  
-It showcases my **skills, projects, and learning journey** as a Full-Stack Developer & Software Tester.  
+It showcases my **skills, projects, and learning journey** as a Software Developer.  
 
 ---
 
