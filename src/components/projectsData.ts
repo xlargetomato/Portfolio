@@ -19,18 +19,7 @@ export const projects: Project[] = [
     demo: "https://uni-website.unaux.com/",
     year: "2023",
     image: "/projects/image1.png",
-    featured: false,
-  },
-  {
-    title: "ReelVault",
-    description:
-      "A Next.js app to save, organize, and search Instagram and Facebook reels with clean UI, fast add flow, and powerful filters.",
-    tech: ["NEXT", "Node.js", "Tailwind", "MySql", "Prisma"],
-    github: "https://github.com/xlargetomato/ReelVault",
-    demo: "",
-    year: "2025",
-    image: "/projects/reel.jpg",
-    featured: false,
+    featured: true,
   },
   {
     title: "Gym Management Desktop App",
@@ -54,18 +43,6 @@ export const projects: Project[] = [
   featured: false,
 },
   {
-    title: "Unity 2D Platformer",
-    description:
-      "A 2D platformer game featuring custom physics, level design, and character animations. Showcases game development skills and C# programming proficiency.",
-    tech: ["Unity", "C#", "Game Design", "2D Graphics"],
-    github: "https://github.com/xlargetomato/unity-platformer",
-    demo: null,
-    year: "2024",
-    image: "/projects/image1.png",
-    featured: true,
-  },
-
-  {
     title: "DEPI Final Exam On JAVA",
     description:
       "As part of my DEPI Java final exam, I built 20 mini-programs and a University Management System using Object-Oriented Programming principles. The tasks ranged from small utilities (ATM simulation, calculator, password validator, games) to larger applications like managing students, courses, and GPA calculation. This project strengthened my ability to design with encapsulation, inheritance, polymorphism, and abstraction while practicing problem-solving with real-world scenarios.",
@@ -74,6 +51,17 @@ export const projects: Project[] = [
     demo: null,
     year: "2025",
     image: "/projects/java.jpg",
+    featured: false,
+  },
+  {
+    title: "ReelVault",
+    description:
+      "A Next.js app to save, organize, and search Instagram and Facebook reels with clean UI, fast add flow, and powerful filters.",
+    tech: ["NEXT", "Node.js", "Tailwind", "MySql", "Prisma"],
+    github: "https://github.com/xlargetomato/ReelVault",
+    demo: "",
+    year: "2025",
+    image: "/projects/reel.jpg",
     featured: false,
   },
 
