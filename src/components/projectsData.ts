@@ -59,7 +59,7 @@ export const projects: Project[] = [
       "A Next.js app to save, organize, and search Instagram and Facebook reels with clean UI, fast add flow, and powerful filters.",
     tech: ["NEXT", "Node.js", "Tailwind", "MySql", "Prisma"],
     github: "https://github.com/xlargetomato/ReelVault",
-    demo: "",
+    demo: "https://reel-vault-git-main-xlargetomatos-projects.vercel.app/",
     year: "2025",
     image: "/projects/reel.jpg",
     featured: false,
